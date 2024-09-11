@@ -1,0 +1,494 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.header {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.login-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+}
+
+.left-sidebar,
+.right-sidebar {
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-link:hover {
+    background-color: #f2f2f2;
+}
+
+.profileImage{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    overflow: hidden;
+}
+
+
+.profileImage img {
+    width: 100%; 
+    height: 100%;
+    display: block; 
+}
+
+
+#editForm div {
+    margin-bottom: 10px; 
+}
+
+#editForm div label {
+    display: inline-block;
+    width: 100px; 
+    font-weight: bold;
+}
+
+#editForm div input {
+    width: 200px; 
+    padding: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+.friend-results-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.friend-card {
+    width: 200px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.friend-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    overflow: hidden;
+    margin: 0 auto 10px;
+}
+
+.friend-avatar img {
+    width: 100%; 
+    height: 100%;
+    display: block; 
+}
+
+
+.friend-name {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.friend-actions {
+    text-align: center; 
+}
+
+.friend-actions button {
+    margin: 5px; 
+}
+
+.notification-card {
+    width: 200px; 
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification-actions {
+    text-align: center; 
+}
+
+.notification-actions button {
+    margin: 5px; 
+}
+
+
+.notification-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    overflow: hidden;
+    margin: 0 auto 10px;
+}
+
+.notification-avatar img {
+    width: 100%; 
+    height: 100%;
+    display: block; 
+}
+
+.notification-sender {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.notification-results-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.message-card {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 30px;
+}
+
+.message-content {
+    flex-grow: 1;
+}
+
+.message-sender {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.message-text {
+    word-wrap: break-word;
+}
+.dialogue-card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.dialogue-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.dialogue-avatar img {
+    width: 100%; 
+    height: 100%;
+    display: block; 
+}
+
+.dialogue-content {
+flex: 1;
+}
+
+.dialogue-info {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 5px;
+}
+
+.dialogue-name {
+font-weight: bold;
+}
+
+.dialogue-time {
+color: #888;
+}
+
+.dialogue-message {
+font-size: 14px;
+}
+
+.active {
+border-left: 3px solid #007bff; 
+}
+
+.dialogue-message {
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis; 
+}
+
+.music-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.music-card {
+    width: 1000px;
+    margin: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.music-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.music-title {
+    font-weight: bold;
+}
+
+.music-artist {
+    color: #888;
+}
+
+.post-body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.posts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+.post {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.post img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.form-container {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin: 0 auto; 
+}
+
+.form-title {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    height: 100px;
+    resize: none; 
+}
+
+.form-input[type="file"] {
+    margin-top: 5px;
+}
+
+.form-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-submit:hover {
+    background-color: #45a049;
+}
+.account-page-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.account-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.account-page-header h1 {
+    margin: 0;
+}
+
+.account-page-header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.account-page-profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.account-page-profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.account-page-profileImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#account-page-userData {
+    font-size: 16px;
+}
+
+#account-page-userData p {
+    margin: 5px 0;
+}
+
+#account-page-editForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.account-page-form-group {
+    margin-bottom: 15px;
+}
+
+.account-page-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.account-page-form-group input {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#account-page-editForm button {
+    align-self: flex-end;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+#account-page-editForm button img {
+    margin-right: 5px;
+}
